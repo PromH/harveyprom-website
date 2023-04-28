@@ -1,0 +1,8 @@
+{{ with .Params.hide_footer }}
+  <!-- No footer here! -->
+{{ else }}
+<hr class="footer-hr">
+  <footer>
+    Website made by &copy; {{ .Site.Params.name }} in {{ now.Year }}
+  </footer>
+{{ end }}

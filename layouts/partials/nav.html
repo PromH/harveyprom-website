@@ -1,0 +1,17 @@
+{{ $RelPermalink := .RelPermalink }}
+<nav>
+  <div>
+    <h2 class="clickable" onclick="window.location.href='/'"><b>Harvey Prom's Website</b></h2>
+  </div>
+  <div>
+    <ul>
+      {{ range site.Menus.main }}
+        {{ $a_class := "" }}
+        {{ if (eq $RelPermalink .PageRef ) }}
+          {{ $a_class = printf "%s%s" $a_class "active" }}
+          {{ end }}
+        <li><a href="{{ .PageRef }}" class="{{ $a_class }}"><b>{{ .Name }}</b></a></li>
+      {{ end }}
+    </ul>
+  </div>
+</nav>

@@ -1,0 +1,21 @@
+{{ $onclick_path := .href }}
+{{ with .href }}
+<div class="card clickable" onclick="window.location.href={{$onclick_path}}">
+{{ else }}
+<div class="card">
+{{ end }}
+  <div class="card-meta-container">
+    <h4>{{ .title }}</h4>
+  </div>
+  <hr>
+  <div class="card-image-container">
+    {{ with .context.Resources.GetMatch .img_path }}
+      <img class="card-image" src="{{ .RelPermalink }}" alt="image not available">
+      <hr>
+    {{ end }}
+  </div>
+  <div class="card-content-container">
+    <span></span>
+    <p>{{ .content }}</p>
+  </div>
+</div>

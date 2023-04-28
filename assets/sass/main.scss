@@ -1,0 +1,156 @@
+// ___MAIN
+html {
+  height: 100%;
+}
+
+body {
+  width: 100%;
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  font-family: sans-serif;
+}
+
+.content {
+  flex: 1;
+}
+
+// ___MAIN_CONTENT
+.main-content {
+  padding: 30px;
+}
+
+// ===PARTIALS
+
+// ___NAV
+nav {
+  position: sticky;
+  top: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin: auto;
+  padding: 20px;
+  background: #111;
+  z-index: 100;
+
+  div {
+    flex: 1;
+    margin: 0;
+    padding: 0;
+  }
+
+  div h2 {
+    color: #fff;
+    margin: 0;
+    padding: 0;
+  }
+    
+  div ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+  
+    a {
+      color: #aaa;
+      text-decoration: none;
+      bottom: 50%;
+  
+      &:hover {
+        text-decoration: underline;
+      }
+
+      &.active {
+        color: #fff;
+      }
+    }
+  
+    li {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+  }
+}
+
+// ___HOME
+
+.quick-links-container {
+  display: flex;
+}
+
+
+// ___FOOTER
+footer {
+  background: #f2f2f2;
+  padding: 20px;
+  font-size: .7em;
+  text-align: center;
+  margin: auto;
+}
+
+.footer-hr {
+  margin-bottom: 0;
+}
+
+// ___MAP
+#map {
+  height: 300px;
+  z-index: 0;
+}
+
+// ___CARD
+.card {
+  border: 1px solid black;
+  border-radius: 5px;
+  margin: 5px;
+  width: 100%;
+
+  &:hover {
+    transform: scale(1.0025);
+    position: relative;
+    transform-origin: 0;
+    transition: 0.1s;
+    z-index: 0;
+  }
+
+  hr {
+    margin: 0;
+  }
+
+  .card-image-container {
+    hr {
+      margin: 0;
+    }
+  }
+
+  .card-image {
+    width: 100%;
+    max-height: 15em;
+    object-fit: cover;
+    position: relative;
+  }
+
+  .card-meta-container {
+    width: 100%;
+    text-align: center;
+  }
+
+  .card-meta-container > * {
+    padding: 0px 10px;
+  }
+
+  .card-content-container {
+    padding: 10px;
+  }
+}
+
+.clickable {
+  &:hover {
+    cursor: pointer;
+  }
+}
