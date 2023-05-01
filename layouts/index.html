@@ -17,7 +17,7 @@
         {{ range first 10 .Pages }}
           {{ partial "card.html" (
               dict "context" . 
-              "img_path" "book.jpg" 
+              "imgPath" "book.jpg"
               "title" .Title 
               "content" .Content
               "href" .Permalink

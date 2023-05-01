@@ -1,6 +1,13 @@
-{{ $onclick_path := .href }}
+{{/*
+  A Card partial that requires the following parameters that are passed in via dict:
+    * context - The context of the page
+    * imgPath - A path to the image to view (Optional)
+    * content - The content to display on the card
+    * href - A href to redirect the user onclick (Optional)
+*/}}
+{{ $onclickPath := .href }}
 {{ with .href }}
-<div class="card clickable" onclick="window.location.href={{$onclick_path}}">
+<div class="card clickable" onclick="window.location.href={{$onclickPath}}">
 {{ else }}
 <div class="card">
 {{ end }}
@@ -9,7 +16,7 @@
   </div>
   <hr>
   <div class="card-image-container">
-    {{ with .context.Resources.GetMatch .img_path }}
+    {{ with .context.Resources.GetMatch .imgPath }}
       <img class="card-image" src="{{ .RelPermalink }}" alt="image not available">
       <hr>
     {{ end }}

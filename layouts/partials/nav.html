@@ -6,11 +6,11 @@
   <div>
     <ul>
       {{ range site.Menus.main }}
-        {{ $a_class := "" }}
+        {{ $aTagClass := "" }}
         {{ if (eq (index $RelPermalink 1) (trim .PageRef "/")) }}
-          {{ $a_class = printf "%s%s" $a_class "active" }}
+          {{ $aTagClass = printf "%s%s" $aTagClass "active" }}
         {{ end }}
-        <li><a href="{{ .PageRef }}" class="{{ $a_class }}"><b>{{ .Name }}</b></a></li>
+        <li><a href="{{ .PageRef }}" class="{{ $aTagClass }}"><b>{{ .Name }}</b></a></li>
       {{ end }}
     </ul>
   </div>

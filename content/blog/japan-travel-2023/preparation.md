@@ -1,7 +1,7 @@
 ---
 title: "Preparation"
-date: 2023-04-25T13:12:45+09:30
+date: 2023-03-19T09:00:00+09:30
 draft: true
-order: 0
+weight: 0
 ---
 

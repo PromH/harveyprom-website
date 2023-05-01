@@ -3,7 +3,7 @@
   <h1>{{ or .Params.Title "My List" }}</h1>
   <p>{{ .Content }}</p>
   <ul>
-    {{ range .Pages }}
+    {{ range sort .Pages "Weight" "asc" }}
       <li>
         <a href="{{ .Permalink }}">{{ .Title }}</a> - {{ .Date.Format "January 2, 2006" }}
       </li>
