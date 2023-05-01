@@ -1,9 +1,9 @@
-baseURL: "http://harveyprom.com"
-languageCode: "en-au"
-title: "Harvey Prom's Website"
+baseURL: http://harveyprom.com
+languageCode: en-au
+title: Harvey Prom's Website
 
 params:
-  name: "Harvey Prom"
+  name: Harvey Prom
 
 taxonomies:
   category: categories

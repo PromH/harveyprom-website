@@ -1,4 +1,4 @@
-{{ $RelPermalink := .RelPermalink }}
+{{ $RelPermalink := split .RelPermalink "/" }}
 <nav>
   <div>
     <h2 class="clickable" onclick="window.location.href='/'"><b>Harvey Prom's Website</b></h2>
@@ -7,9 +7,9 @@
     <ul>
       {{ range site.Menus.main }}
         {{ $a_class := "" }}
-        {{ if (eq $RelPermalink .PageRef ) }}
+        {{ if (eq (index $RelPermalink 1) (trim .PageRef "/")) }}
           {{ $a_class = printf "%s%s" $a_class "active" }}
-          {{ end }}
+        {{ end }}
         <li><a href="{{ .PageRef }}" class="{{ $a_class }}"><b>{{ .Name }}</b></a></li>
       {{ end }}
     </ul>
