@@ -5,7 +5,10 @@
   <ul>
     {{ range sort .Pages "Weight" "asc" }}
       <li>
-        <a href="{{ .Permalink }}">{{ .Title }}</a> - {{ .Date.Format "January 2, 2006" }}
+        <a href="{{ .Permalink }}">{{ .Title }}</a>
+        {{ with .Date }}
+          - {{ .Format "January 2, 2006" }}
+        {{ end }}
       </li>
     {{ end }}
   </ul>
