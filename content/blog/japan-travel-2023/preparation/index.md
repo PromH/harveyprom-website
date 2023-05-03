@@ -1,6 +1,6 @@
 ---
 title: "Initiation and Preparation"
-draft: true
+draft: false
 weight: 0
 ---
 ### The Long Wait
