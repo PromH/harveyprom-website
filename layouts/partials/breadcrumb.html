@@ -1,18 +1,22 @@
-{{ $RelPermalink := split .RelPermalink "/" }}
-{{ $lastElement := index $RelPermalink (sub (len $RelPermalink) 2) }}
+{{ $RelPermalink := split (strings.TrimRight "/" .RelPermalink) "/" }}
+{{ $lastElement := index $RelPermalink (sub (len $RelPermalink) 1) }}
+{{ $combinedPath := site.BaseURL }}
 <ul class="breadcrumb">
-  <li><a href="/">Home</a></li>
-  {{ $currentPath := "/" }}
   {{ range $RelPermalink }}
-    {{ $elem := . }}
-    {{ $prettyElem := replace $elem "-" " " | title }}
-    {{ if not (eq $elem "") }}
-      {{ if not (eq $elem $lastElement) }}
-        {{ $currentPath = printf "%s%s%s" $currentPath $elem "/" }}
-        <li><a href="{{ $currentPath }}">{{ $prettyElem }}</a></li>
+    {{ $currentPath := printf "%s%s" $combinedPath . }}
+    {{ $currentHref := printf "%s/%s/" $combinedPath . }}
+    {{ $prettyElem := replace . "-" " " | title }}
+    {{/*  $combinedPath points to home  */}}
+    {{ if (eq $currentPath site.BaseURL) }}
+      <li><a href="{{ site.BaseURL }}">Home</a></li>
+    {{/*  $combinedPath doesn't point to home  */}}
+    {{ else }}
+      {{ if not (eq . $lastElement) }}
+        <li><a href="{{ $currentHref }}">{{ $prettyElem }}</a></li>
       {{ else }}
         <li>{{ $prettyElem }}</li>
       {{ end }}
-    {{ end }}
+      {{ $combinedPath = $currentPath }}
+    {{ end}}
   {{ end }}
 </ul>

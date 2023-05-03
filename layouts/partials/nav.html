@@ -1,18 +1,18 @@
-{{ printf "%s" site.BaseURL }}
-{{ printf "%s" .RelPermalink }}
-{{ $RelPermalink := split .RelPermalink "/" }}
+{{ $RelPermalink := .RelPermalink }}
 <nav>
   <div>
-    <h2 class="clickable" onclick="window.location.href='/'"><b>Harvey Prom's Website</b></h2>
+    <h2 class="clickable" onclick="window.location.href='{{ site.BaseURL }}'"><b>Harvey Prom's Website</b></h2>
   </div>
   <div>
     <ul>
       {{ range site.Menus.main }}
         {{ $aTagClass := "" }}
-        {{ if (eq (index $RelPermalink 1) (trim .PageRef "/")) }}
+        {{ $leftTrimmedPageRef := strings.TrimLeft "/" .PageRef }}
+        {{ $href := printf "%s%s" site.BaseURL $leftTrimmedPageRef }}
+        {{ if (strings.Contains $RelPermalink (printf "/%s" $leftTrimmedPageRef)) }}
           {{ $aTagClass = printf "%s%s" $aTagClass "active" }}
         {{ end }}
-        <li><a href="{{ .PageRef }}" class="{{ $aTagClass }}"><b>{{ .Name }}</b></a></li>
+        <li><a href="{{ $href }}" class="{{ $aTagClass }}"><b>{{ .Name }}</b></a></li>
       {{ end }}
     </ul>
   </div>

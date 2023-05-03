@@ -11,12 +11,9 @@ taxonomies:
 
 menu:
   main:
-  - name: Home
-    pageRef: /
-    weight: 1
   - name: Blog
     pageRef: /blog/
-    weight: 2
+    weight: 1
   - name: About
     pageRef: /about/
-    weight: 3
+    weight: 2
