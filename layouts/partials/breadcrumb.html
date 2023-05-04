@@ -1,22 +1,29 @@
-{{ $RelPermalink := split (strings.TrimRight "/" .RelPermalink) "/" }}
-{{ $lastElement := index $RelPermalink (sub (len $RelPermalink) 1) }}
-{{ $combinedPath := site.BaseURL }}
+{{ $RelPermalink := split (strings.TrimLeft "/" (strings.TrimRight "/" .RelPermalink)) "/" }}
+{{ $lastIndex := sub (len $RelPermalink) 1 }}
+{{ $lastElement := index $RelPermalink $lastIndex }}
+{{ $combinedPath := strings.TrimRight "/" site.BaseURL }}
 <ul class="breadcrumb">
+  {{/*  First element would be the home  */}}
+  <li><a href="{{ site.BaseURL }}">Home</a></li>
+
+  {{/*  Pop first element if it is a substring of the home path to avoid dupe home paths */}}
+  {{ if (strings.Contains site.BaseURL (index $RelPermalink 0)) }}
+    {{ $RelPermalink = last $lastIndex $RelPermalink }}
+  {{ end }}
+
+  {{/*  Rest of the elements  */}}
   {{ range $RelPermalink }}
-    {{ $currentPath := printf "%s%s" $combinedPath . }}
-    {{ $currentHref := printf "%s/%s/" $combinedPath . }}
+    {{ $currentHref := printf "%s/%s" $combinedPath . }}
     {{ $prettyElem := replace . "-" " " | title }}
-    {{/*  $combinedPath points to home  */}}
-    {{ if (eq $currentPath site.BaseURL) }}
-      <li><a href="{{ site.BaseURL }}">Home</a></li>
-    {{/*  $combinedPath doesn't point to home  */}}
+
+    {{/*  Make link if not last element  */}}
+    {{ if not (eq . $lastElement) }}
+      <li><a href="{{ $currentHref }}">{{ $prettyElem }}</a></li>
+    {{/*  Make normal list item if last element  */}}
     {{ else }}
-      {{ if not (eq . $lastElement) }}
-        <li><a href="{{ $currentHref }}">{{ $prettyElem }}</a></li>
-      {{ else }}
-        <li>{{ $prettyElem }}</li>
-      {{ end }}
-      {{ $combinedPath = $currentPath }}
-    {{ end}}
+      <li>{{ $prettyElem }}</li>
+    {{ end }}
+    {{/*  Update combinedPath  */}}
+    {{ $combinedPath = $currentHref }}
   {{ end }}
 </ul>

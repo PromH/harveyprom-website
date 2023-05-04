@@ -1,5 +1,5 @@
 ---
-title: "Initiation and Preparation"
+title: "Preparation"
 draft: false
 weight: 0
 ---
