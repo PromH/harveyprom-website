@@ -1,0 +1,18 @@
+{{ $src := .Get "src" }}
+{{ $alt := .Get "alt" }}
+{{ $caption := "" }}
+{{ if .Get "caption" }}{{ $caption = .Get "caption" }}{{ end }}
+<figure class="slideshow-container-slide slideshow-container-fade" style="background-image: url({{ $src }})" onclick="openSlideshowModal('slideshow-modal-{{ $src }}')">
+  {{ if not (eq "" $caption)}}
+    <figcaption class="slideshow-container-caption">{{ $caption }}</figcaption>
+  {{ end }}
+</figure>
+
+<!-- The Modal -->
+<div id="slideshow-modal-{{ $src }}" onclick="closeSlideshowModal()" class="slideshow-modal">
+  <span class="slideshow-modal-close" onclick="closeSlideshowModal()">&times;</span>
+  <img class="slideshow-modal-content" id="slideshow-modal-img-{{ $src }}" src="{{ $src }}">
+  {{ if not (eq "" $caption)}}
+    <figcaption class="slideshow-modal-caption">{{ $caption }}</figcaption>
+  {{ end }}
+</div>

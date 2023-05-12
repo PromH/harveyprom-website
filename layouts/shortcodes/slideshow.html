@@ -1,0 +1,16 @@
+{{ $js := (printf "%s%s" site.BaseURL "/js/slideshow.js") }}
+{{ $id := delimit (shuffle (seq 1 9)) "" }}
+{{ $slideshowId := printf "slideshow_container_%s" $id }}
+<div id="{{ $slideshowId }}" class="slideshow-container" data-image-index="0">
+  {{ .Inner }}
+
+  {{/*  Next and previous buttons  */}}
+  <a class="slideshow-container-prev" onclick="plusSlides('{{ $slideshowId }}', -1)">&#10094;</a>
+  <a class="slideshow-container-next" onclick="plusSlides('{{ $slideshowId }}', 1)">&#10095;</a>
+
+  {{/*  Script  */}}
+  <script src="{{ $js }}"></script>
+  <script>
+    showSlides('{{ $slideshowId }}', 0);
+  </script>
+</div>

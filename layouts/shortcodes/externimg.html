@@ -1,0 +1,14 @@
+{{/* init vars */}}
+{{ $size := "1000x" }}
+{{ if .Get "size" }}{{ $size = .Get "size" }}{{ end }}
+{{ $src := (.Get "src") }}
+{{ $alt := .Get "alt" }}
+{{ $height := "100px" }}
+{{ if .Get "height" }}{{ $height = .Get "height" }}{{ end }}
+{{ $width := "100px" }}
+{{ if .Get "width" }}{{ $width = .Get "width" }}{{ end }}
+{{ $caption := .Get "caption" }}
+<figure class="img-figure">
+  <img src="{{ $src }}" alt="{{ $alt }}" title="{{ $alt }}" height="{{ $height }}" width="{{ $width }}" />
+  <figcaption class="img-figure-caption">{{ $caption }}</figcaption>
+</figure>

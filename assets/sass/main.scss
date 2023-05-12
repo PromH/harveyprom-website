@@ -187,3 +187,167 @@ ul.breadcrumb li a:hover {
     cursor: pointer;
   }
 }
+
+// ____FIGURE
+.img-figure {
+  display: table;
+
+  img {
+    display: table-row;
+  }
+
+  .img-figure-caption {
+    color: #444;
+    text-align: center;
+  }
+}
+
+// ____SLIDESHOW
+/* Slideshow container */
+.slideshow-container {
+  min-width: 30vw;
+  max-width: 70vw;
+  position: relative;
+  display: block;
+  margin: auto;
+  min-height: 40vh;
+  max-height: 70vh;
+  border: 2px solid #333;
+  height: 100%;
+  width: 50%;
+  background-color: #111;
+}
+
+/* Hide the images by default */
+.slideshow-container-slide {
+  display: block;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  min-height: inherit;
+  cursor: pointer;
+}
+
+/* Next & previous buttons */
+.slideshow-container-prev, .slideshow-container-next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  display: block;
+}
+
+/* Position the "next button" to the right */
+.slideshow-container-next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.slideshow-container-next:hover, .slideshow-container-prev:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.slideshow-container-caption {
+  color: #f2f2f2;
+  font-size: 15px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Fading animation */
+.slideshow-container-fade {
+  animation-name: slideshow-container-fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes slideshow-container-fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+/* The Modal (background) */
+.slideshow-modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1000; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+}
+
+/* Modal Content (image) */
+.slideshow-modal-content {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+}
+
+.slideshow-modal-caption {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+  text-align: center;
+  color: #ccc;
+  padding: 10px 0;
+  height: 150px;
+}
+
+/* Add Animation */
+.slideshow-modal-content, .slideshow-modal-caption {
+  -webkit-animation-name: slideshow-modal-zoom;
+  -webkit-animation-duration: 0.6s;
+  animation-name: slideshow-modal-zoom;
+  animation-duration: 0.6s;
+}
+
+@-webkit-keyframes slideshow-modal-zoom {
+  from {-webkit-transform:scale(0)}
+  to {-webkit-transform:scale(1)}
+}
+
+@keyframes slideshow-modal-zoom {
+  from {transform:scale(0)}
+  to {transform:scale(1)}
+}
+
+/* The Close Button */
+.slideshow-modal-close {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.slideshow-modal-close:hover,
+.slideshow-modal-close:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 700px){
+  .slideshow-modal-content {
+    width: 100%;
+  }
+}

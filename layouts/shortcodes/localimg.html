@@ -1,0 +1,15 @@
+{{/* init vars */}}
+{{ $size := "1000x" }}
+{{ if .Get "size" }}{{ $size = .Get "size" }}{{ end }}
+{{ $src := (.Page.Resources.GetMatch (.Get "src")) }}
+{{ $src = $src.Resize $size }}
+{{ $alt := .Get "alt" }}
+{{ $height := "100px" }}
+{{ if .Get "height" }}{{ $height = .Get "height" }}{{ end }}
+{{ $width := "100px" }}
+{{ if .Get "width" }}{{ $width = .Get "width" }}{{ end }}
+{{ $caption := .Get "caption" }}
+<figure>
+  <img src="{{ $src }}" alt="{{ $alt }}" title="{{ $alt }}" height="{{ $height }}" width="{{ $width }}" />
+  <figcaption>{{ $caption }}</figcaption>
+</figure>

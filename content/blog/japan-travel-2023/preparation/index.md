@@ -31,10 +31,14 @@ With the date for us to leave for Japan fast approaching, we spent our last coup
 
 Considering, that this was my first trip that's not with my family, I didn't really know how much I needed to bring along. So I just packing a ton of clothes and shoes. It ended up taking up all the space in my travel suitcase.
 
-{{< simpleimg src="images/overpacked.jpg" alt="Overpacked Travel Suitcase" height="600px" width="auto" >}}
+{{< externimg src="https://chi01pap001files.storage.live.com/y4m95r7pJhTtm0C1Kw67nTzYBb0Hyl4Nucs0R4mJDPzkPT7k0Gp3e0u41U8cFSNfetFCIP-bG3AGUb0Cx9NxORa6sfN_QnRiG6s76xPGJOArHjJDic31nheUKCZTcDY1qBhZd4A5llFtQN5rIbTSgZZZCCuwxwPMwLrpwAB5GtS4BCbtlouEDEaPmNhsUXS3MDr?width=495&height=660&cropmode=none" alt="Overpacked Travel Suitcase" height="600px" width="auto" >}}
 
-I bought and was utilising packing cubes to its fullest here. I ended up having to remove some clothes but ended up taking too much since I struggled to pack my gifts that I brought back from Japan (still managed in the end).
+Packing went on for a while since I was constantly folding, arranging, and trying to figure out what to bring along. While this was all happening, I had Welcome to Wrexham in the background. Pretty good docuseries about Rob McElhenney and Ryan Reynolds buying a club in Wales. You get to see the process and difficulty that comes with owning a club with its history.
+
+{{< youtube UJYFASFtbc4 >}}
+
+I bought and was utilising packing cubes to its fullest here. I ended up having to remove some clothes since it took too much space. I struggled to pack my gifts that I brought back from Japan because it was still too much (still managed to fit most things in the end).
 
 In the end, it was myself, Stephen, and Jason who ended up going to Japan in the end.
 
-{{< simpleimg src="images/overpacked.jpg" alt="Overpacked Travel Suitcase" height="600px" width="auto" >}}
+{{< externimg src="https://chi01pap001files.storage.live.com/y4mOnomzrjv8xgRg0XPVUMBYrN7oVCwSHEjaMeFaduV_oBJeL3AWm92rhvVl7Sq2Bd7If6z1ZhaFZ2PvPb6NW6UI19xSRy7IVzaqHcFtSJhxRHgsO8zr_8_I_yuYzByx7zeHmZiMrsfZ4I0_hn435bXZC7NMTUqxrkaWU8cdpYRmXDhPPV0npAh873K3Xp-f2R-?width=314&height=660&cropmode=none" alt="The Boys" height="600px" width="auto" caption="From left to right: Myself, Jason, and Stephen ">}}

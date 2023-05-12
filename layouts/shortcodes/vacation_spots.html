@@ -1,8 +1,9 @@
+{{ $js := (printf "%s%s" site.BaseURL "/js/map.js") }}
 <div id="map">
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" crossorigin=""/>
   <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js" crossorigin=""></script>
   <script>
     const markers = {{ $.Site.Data.japan_travel_2023.vacation_spots }};
   </script>
-  <script src="/map.js"></script>
+  <script src="{{ $js }}"></script>
 </div>
