@@ -26,7 +26,6 @@ function showSlides(slideshowId, indexOfImageToShow) {
 function closeSlideshowModal() {
   const slideshowModals = document.getElementsByClassName("slideshow-modal");
   for (let i=0; i < slideshowModals.length; i++) {
-    console.log("closing span", slideshowModals[i]);
     slideshowModals[i].style.display = "none";
   };
 }

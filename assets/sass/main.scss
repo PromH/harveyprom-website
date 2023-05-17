@@ -18,7 +18,7 @@ body {
 
 // ___MAIN_CONTENT
 .main-content {
-  padding: 30px;
+  padding: 5vh 10vw;
 }
 
 // ===PARTIALS
@@ -190,11 +190,7 @@ ul.breadcrumb li a:hover {
 
 // ____FIGURE
 .img-figure {
-  display: table;
-
-  img {
-    display: table-row;
-  }
+  text-align: center;
 
   .img-figure-caption {
     color: #444;
@@ -295,7 +291,9 @@ ul.breadcrumb li a:hover {
   margin: auto;
   display: block;
   width: 80%;
-  max-width: 700px;
+  object-fit: contain;
+  max-width: 70vw;
+  max-height: 70vh;
 }
 
 .slideshow-modal-caption {
