@@ -7,4 +7,4 @@ I am Harvey.
 
 ### These are my favorite vacation spots
 
-{{< vacation_spots >}}
+{{<vacation_spots >}}

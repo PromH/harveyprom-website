@@ -18,9 +18,11 @@ function showSlides(slideshowId, indexOfImageToShow) {
   slideshow.setAttribute("data-image-index", `${indexOfImageToShow}`);
   let slideshowImages = slideshow.getElementsByClassName("slideshow-container-slide");
   for (let i = 0; i < slideshowImages.length; i++) {
-    slideshowImages[i].style.display = "none";  
+    slideshowImages[i].style.display = "none";
   }
-  slideshowImages[indexOfImageToShow].style.display = "block";  
+  slideshowImages[indexOfImageToShow].style.display = "block";
+  const slideshowText = slideshow.getElementsByClassName('slideshow-container-number-text')[0];
+  slideshowText.innerHTML = `${indexOfImageToShow + 1} / ${slideshowImages.length}`;
 }
 
 function closeSlideshowModal() {

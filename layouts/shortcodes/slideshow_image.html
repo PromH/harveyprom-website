@@ -11,7 +11,7 @@
 <!-- The Modal -->
 <div id="slideshow-modal-{{ $src }}" onclick="closeSlideshowModal()" class="slideshow-modal">
   <span class="slideshow-modal-close" onclick="closeSlideshowModal()">&times;</span>
-  <img class="slideshow-modal-content" id="slideshow-modal-img-{{ $src }}" src="{{ $src }}">
+  <img class="slideshow-modal-content" id="slideshow-modal-img-{{ $src }}" src="{{ $src }}" loading="lazy">
   {{ if not (eq "" $caption)}}
     <figcaption class="slideshow-modal-caption">{{ $caption }}</figcaption>
   {{ end }}
