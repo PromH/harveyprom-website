@@ -25,7 +25,7 @@ It took a while to get out of Changi airport because their form application for 
 I've been to South-East Asian countries before and knew how humid and hot it was going to be there but I can never get used to being sweaty all the time. Outside, it was just raining and hot and it wasn't pleasant. I much rather 45 degree dry heat in Australia than 30 degree sticky heat.
 
 <!-- trunk-ignore(gitleaks/generic-api-key) -->
-{{<externvid src="https://onedrive.live.com/embed?cid=4910A2D11F377864&resid=4910A2D11F377864%2118970&authkey=ADeO2WCuCaE5auU" height="600px" width="auto" caption="Inside a Singaporean Taxi">}}
+{{<externvid src="https://onedrive.live.com/embed?cid=4910A2D11F377864&resid=4910A2D11F377864%2118970&authkey=ADeO2WCuCaE5auU" height="auto" width="auto" caption="Inside a Singaporean Taxi">}}
 
 We met up with Chingwen at Marina Bay Sans Singapore, using the **Grab** app which is just Singaporean Uber. We went and looked around the inside of the mall and spent time exploring the area, just looking at bougie stores for all the rich people there.
 

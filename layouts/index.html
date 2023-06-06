@@ -10,27 +10,5 @@
       {{ .Content }}
     </div>
     <hr>
-    <div>
-      <h3>Quick Links</h3>
-      <p>Here are some quick links.</p>
-      <div class="quick-links-container">
-        {{ range first 10 .Pages }}
-          {{ partial "card.html" (
-              dict "context" . 
-              "imgPath" "book.jpg"
-              "title" .Title 
-              "content" .Content
-              "href" .Permalink
-            )
-          }}
-        {{ end }}
-        </div>
-    </div>
-    <hr>
-    <div>
-      <h3>Highlighted Blogs</h3>
-      <p>Here are some of my favourite blogs.</p>
-      <span>TBD</span>
-    </div>
   </main>
 {{ end }}
