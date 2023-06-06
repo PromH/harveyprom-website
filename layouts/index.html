@@ -1,14 +1,16 @@
 {{ define "main" }}
-  <main aria-role="main">
+  <main aria-role="main" class="main" style="">
     <header class="homepage-header">
-      <h1>{{ .Title }}</h1>
-      {{ with .Params.subtitle }}
+      {{/*  <h1>{{ .Title }}</h1>  */}}
+      {{/*  {{ with .Params.subtitle }}
         <span class="subtitle">{{ . }}</span>
-      {{ end }}
+      {{ end }}  */}}
     </header>
     <div class="homepage-content">
-      {{ .Content }}
+      <img class="main-homepage-picture" src="homepage_photo.jpeg">
+      <div class="main-homepage-content">
+        {{ .Content }}
+      </div>
     </div>
-    <hr>
   </main>
 {{ end }}
