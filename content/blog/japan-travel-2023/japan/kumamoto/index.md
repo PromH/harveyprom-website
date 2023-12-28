@@ -1,7 +1,7 @@
 ---
 title: "Kumamoto"
 date: 2023-03-21T16:30:11+09:30
-draft: true
+draft: false
 weight: 1
 ---
 ### Nakamura's Ranch
@@ -23,8 +23,6 @@ When we arrived, we met Nakamura-san's wife and they helped prepare our rooms fo
 
 <!-- trunk-ignore(gitleaks/generic-api-key) -->
 {{<externvid src="https://onedrive.live.com/embed?cid=4910A2D11F377864&resid=4910A2D11F377864%2119267&authkey=AP0X9gzsGsXywBw" height="640" width="360" caption="The Nakamura's had a fancy Japanese toilet!!">}}
-<!-- trunk-ignore(gitleaks/generic-api-key) -->
-{{<externvid src="https://onedrive.live.com/embed?cid=4910A2D11F377864&resid=4910A2D11F377864%2119277&authkey=AMrzD3m4uK6EwUo" width="360" height="640" caption="Rizz master">}}
 
 After that, Nakamura-san then dropped us off at an onsen where we had a hot bath there. Pretty much you had to be fully nude and wash yourself before going and relaxing in the hot spring bath there. It was so relaxing and then there was a cold bath area that people could go to as well to refresh yourself. It was such a relaxing experience and I highly recommend people to go out and try it (see this [guide](https://youtu.be/FdYiNdI2kPE?t=332)). I was so ready to sleep after that and the exhaustion of not having a proper sleep was catching up at the time however I was also hungry and dinner did not disappoint.
 
@@ -64,6 +62,10 @@ Once we got our bikes sorted, we looked to follow the road all the way to the hi
 {{<externvid src="https://onedrive.live.com/embed?cid=4910A2D11F377864&resid=4910A2D11F377864%2114925&authkey=AE74Os-Qz3VvRmg" width="640" height="360">}}
 
 Jason managed to soldier on with his injury and was fine with walking once he got patched up. We ended up walking around and exploring the village and taking photos along the way. We had a map but we didn't know how to follow it so ended up scrapping it and making our own path. We followed the road and encountered some pretty interesting things such as greenhouses, shrines, abandoned cars, and a spring to refill your water. That spring had a lot of people come and go just to fill up their drinking water. The water was super clear and refreshing to drink as well.
+
+{{<slideshow >}}
+  {{<slideshow_image src="">}}
+{{</slideshow >}}
 
 <!-- trunk-ignore(gitleaks/generic-api-key) -->
 {{<externvid src="https://onedrive.live.com/embed?cid=4910A2D11F377864&resid=4910A2D11F377864%2116581&authkey=AMnM4QXMcE88SNg" width="640" height="360">}}
