@@ -51,11 +51,11 @@ Started to become late in the evening so there wasn't much we could do besides e
 ### Miyajimacho - First of the Three Views of Japan
 Our next day in Hiroshima, we went to visit Miyajimacho which is located in a small island in Hiroshima. It is a very popular tourist destination and we reached it by ferry.
 
-The most distinguishing feature of the island was the giant red tori gate that stood in the water. The island had so many areas to explore and I spammed my camera's shutter just taking as many photos of interesting things I could find, which was a lot.
+The most distinguishing feature of the island was the giant red torii gate that stood in the water. The island had so many areas to explore and I spammed my camera's shutter just taking as many photos of interesting things I could find, which was a lot.
 
 There is a lot to cover so I'll just highlight things I've found interesting:
 
-* The giant red tori gate that began its day surrounded by water but by the end of the day, the water went away so people were able to walk on the beach and take photos near it.
+* The giant red torii gate that began its day surrounded by water but by the end of the day, the water went away so people were able to walk on the beach and take photos near it.
 * Deers roamed the island and were very tolerant of people.
 * A tall five tiered pagoda that was very impressive.
 * There were cherry blossoms everywhere.
@@ -64,6 +64,6 @@ There is a lot to cover so I'll just highlight things I've found interesting:
 
 
 ### Hiroshima Peace Memorial Museum
-Our final day in Hiroshima ended up making us pretty down since we ended up going to the Hiroshima Peace Memorial Museum and it had a lot of tough images to see there but it was well presented in an impactful manner. Not much photos to share in the museum, just photos outside the museum. Would recommend visiting the museum unless you're not able to handle some disturbing images.
+Our final day in Hiroshima led to us having to carry all our luggage carefully down 5 floors. Our final place in Hiroshima ended up making us pretty down. The Hiroshima Peace Memorial Museum was confronting and it had a lot of tough images to see there but it was well presented that impacts you. Not much photos to share in the museum, just photos outside the museum. Would recommend visiting the museum unless you're not able to handle some disturbing images.
 
 Our next destination was Osaka.
